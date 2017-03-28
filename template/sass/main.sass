@@ -1,0 +1,177 @@
+/* Global basic styles ===================================================================== */
+*
+  margin: 0
+  padding: 0
+
+html
+  overflow-y: scroll
+  background: #ececec
+
+body
+  position: relative
+  background: #fff
+  color: #747474
+  font: 0.813em/1.5em "Arial", sans-serif
+
+li
+  margin: 0.5em 0 0.5em 2em
+
+ul[class]
+  list-style: none
+
+a
+  color: #3f3f3f
+  -moz-transition: color 0.5s
+  -webkit-transition: color 0.5s
+  -o-transition: color 0.5s
+  transition: color 0.5s
+  text-decoration: none
+  &:hover
+    color: #ff8400
+    text-decoration: none
+  *
+    cursor: pointer
+
+.cf:after
+  display: block
+  clear: both
+  height: 0
+  overflow: hidden
+  font-size: 0
+  content: ' '
+/* Main layout ===================================================================== */
+
+header
+  position: relative
+  z-index: 50
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
+
+.top
+  position: relative
+  z-index: 20
+  margin: 0
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.05)
+  background: #4cb1ca
+  color: #fff
+  font-size: 0.946em
+  text-align: right
+
+.top > div
+  max-width: 940px
+  margin: 0 auto
+  &:after
+    display: block
+    clear: both
+    content: ' '
+    overflow: hidden
+    height: 0
+    margin: 0
+.top p
+  float: left
+  margin: 0
+  padding: 0
+  line-height: 30px
+  font-family: 'Open-Sans-Regular'
+  margin: 12px 0 12px 0
+.top nav
+  float: right
+  display: block
+
+.main-header-wrapper p.title
+  float: left
+  margin: 13px 25px 0 0
+  color: #656565
+  font-family: 'Open-Sans-Bold'
+  font-size: 36px
+
+.main-header-wrapper p.title a
+  color: #656565
+
+.main-header
+  position: relative
+  z-index: 0
+  max-width: 940px
+  margin: 0 auto
+  padding: 25px 0 25px 0
+
+.top nav > ul > li
+    margin: 12px 0 12px 0
+    &:not(:last-child)
+      border-right: 1px solid #FFF
+    > a
+      display: inline-block
+      height: 30px
+      padding: 0 10px
+      color: #fff
+      line-height: 30px
+      font-family: 'Open-Sans-Regular'
+    &:hover > a
+      background-color: #81cde0
+      color: #fff
+
+.top nav > ul, .main-header-wrapper nav > ul
+  min-height: 30px
+  margin: 0
+  padding: 0
+  list-style: none
+  text-align: left
+  > li
+    float: left
+    position: relative
+    > a
+      display: inline-block
+
+.main-header-wrapper nav > ul > li
+  margin: 12px 0 12px 0
+  > a
+    display: inline-block
+    height: 30px
+    margin-left: 15px
+    color: #656565
+    line-height: 22px
+    font-family: 'Open-Sans-Bold'
+  &:hover > a
+    color: #b7b7b7
+
+.main-header-wrapper 
+  li#menu-item-2961
+    i.fa
+      right: -10px
+      top: -13px
+      
+.main-header-wrapper 
+  li#menu-item-2961, li#menu-item-2962
+    i.fa
+      position: relative
+      line-height: 56px
+      width: 44px
+      height: 44px
+      border-radius: 50%
+      text-align: center
+      font-size: 20px
+      display: block
+      opacity: 1
+      background-color: #7db122
+      color: white
+      &::before
+        display: block
+        position: absolute
+        width: 30px
+        height: 30px
+        line-height: 30px
+        top: 6px
+        left: 7px
+.main-header-wrapper 
+  li#menu-item-2962
+    i.fa
+      right: -3px
+      top: -13px
+
+footer
+  .footer-widget-area
+    width: 940px
+    margin: 0 auto
+    padding: 0
+    overflow: hidden
+    .widget-fb, .widget-tw, .widget-info
+      float: left
